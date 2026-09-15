@@ -1,0 +1,14 @@
+{
+  "name": "filestore-deno-bot",
+  "version": "1.0.0",
+  "description": "Stateless Secure File Store Bot - Links never expire, never saved",
+  "deploy": {
+    "entrypoint": "main.ts",
+    "include": ["main.ts", "deno.json"],
+    "exclude": ["README.md"]
+  },
+  "imports": {},
+  "tasks": {
+    "start": "deno run --unstable-kv --allow-net --allow-env main.ts"
+  }
+}
